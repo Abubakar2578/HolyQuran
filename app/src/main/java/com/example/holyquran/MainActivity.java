@@ -279,7 +279,7 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this, f, Toast.LENGTH_SHORT).show();
                 intent.putExtra("surat" , f);
                 intent.putExtra("ayatStart" , SSP[position]);
-                intent.putExtra("ayatEnd" , (SSP[position] - 1 ) );
+                intent.putExtra("ayatEnd" , (SSP[position + 1]  ) );
                 startActivity(intent);
             }
         });

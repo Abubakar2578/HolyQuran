@@ -272,10 +272,14 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //String f = arrayList.get(position);
-                //Toast.makeText(MainActivity.this, f, Toast.LENGTH_SHORT).show();
+                String f = arrayList.get(position);
+
 
                 Intent intent = new Intent(MainActivity.this , MainActivity2.class);
+                //Toast.makeText(MainActivity.this, f, Toast.LENGTH_SHORT).show();
+                intent.putExtra("surat" , f);
+                intent.putExtra("ayatStart" , SSP[position]);
+                intent.putExtra("ayatEnd" , (SSP[position] - 1 ) );
                 startActivity(intent);
             }
         });

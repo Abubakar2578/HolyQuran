@@ -261,7 +261,7 @@ public class MainActivity extends AppCompatActivity {
         listView = findViewById(R.id.listView);
 
         for (int i = 0 ;  i < 114 ; i++){
-            arrayList.add(englishSurahNames[i]);
+            arrayList.add("Surah " + englishSurahNames[i]);
         }
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this , android.R.layout.simple_list_item_1 , arrayList);

@@ -6390,7 +6390,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView textView;
     ListView listView;
     ArrayList<String> arrayList = new ArrayList<String>();
-    ArrayList<String> arrayList2 = new ArrayList<String>();
+
 
 
     @Override
@@ -6441,23 +6441,13 @@ public class MainActivity2 extends AppCompatActivity {
 
                     startActivity(in);
 
-                    //arrayList2.add(QuranArabicText[single]);
 
-                    //ArrayAdapter<String> arrayAdapter2 = new ArrayAdapter<String>(this , android.R.layout.simple_list_item_2 , arrayList2);
-
-                    //listView.setAdapter(arrayAdapter2);
-
-                    //arrayAdapter.notifyDataSetChanged();
 
                 }
             }
         });
 
-        //String abc = surat + " " + ayatStart + " " + ayatEnd;
 
-        //Toast.makeText(this, abc, Toast.LENGTH_SHORT).show();
-        //Toast.makeText(this, ayatStart , Toast.LENGTH_SHORT).show();
-        //Toast.makeText(this, ayatEnd, Toast.LENGTH_SHORT).show();
 
 
     }
